@@ -14,7 +14,7 @@ public class ConnectionProvider {
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/blooddonation", "root", "PvHoang10022003?");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/blooddonation", "root", "mypassword");
             return con;
         } catch (Exception e) {
             System.out.println("Failed to connect to database");
